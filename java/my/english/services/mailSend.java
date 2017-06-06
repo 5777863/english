@@ -40,7 +40,7 @@ public class mailSend {
 		// Get system properties
 		// Properties properties = System.getProperties();
 		Properties properties = new Properties();
-		Authenticator auth = new MyAuthenticator("www.testingwords.ru@mail.ru", "90786anv");
+		Authenticator auth = new MyAuthenticator(from, "*****");
 		// Authenticator auth = new MyAuthenticator("testingwords@mail.ru",
 		// "999999qwer");
 		// Setup mail server
