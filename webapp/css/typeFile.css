@@ -1,0 +1,59 @@
+.file-upload {
+	display: block;
+	/* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 70%; /* Задаем ширину кнопки выбора файла */
+	height: 40px; /* Задаем высоту кнопки выбора файла */
+	background: #6da047;
+	padding: 8px 4px;
+	color: #fff;
+	text-align: center;
+	float: left;
+}
+
+.file-upload:hover {
+	background: #7aad55;
+}
+
+.file-upload input[type="file"] {
+	display: none; /* Обязательно скрываем настоящий Input File */
+}
+
+.file-upload label {
+	/* Растягиваем label на всю возможную площадь блока .file-upload */
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.file-upload span {
+	line-height: 25px;
+	/* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+
+@media screen and (max-width: 280px) {
+	.file-upload {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 360px) {
+	.file-upload {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+	.file-upload {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	.file-upload {
+		width: 65%;
+	}
+}

@@ -1,0 +1,19 @@
+label.error {
+	font-size: 1.1em;
+	display: block;
+	color: rgb(204, 16, 16);
+	width: 80%;
+	margin: 0 auto;
+}
+
+input.error {
+	border-style: double;
+	border-width: 3px;
+	border-color: rgb(204, 16, 16);
+}
+
+input.valid {
+	border-style: double;
+	border-width: 3px;
+	border-color: rgb(0, 255, 0);
+}

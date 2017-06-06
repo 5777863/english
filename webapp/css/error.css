@@ -1,0 +1,147 @@
+body {
+	background-attachment: fixed;
+	background-image: url('../img/bcg.jpg');
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+
+body .start {
+	height: 100%;
+	overflow: auto;
+	background: rgba(68, 69, 69, 0.95);
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.head1 {
+	font-family: "BeerRegular";
+	font-size: 2.5em;
+	line-height: 45px;
+	min-height: 50px;
+	background: rgb(199, 18, 21);
+	display: block;
+	padding-left: 3%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+a:visited, a:link {
+	text-decoration: none;
+}
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+	min-height: 350px;
+}
+
+.unit { //
+	background: rgb(105, 3, 3);
+	border-radius: 10px;
+	padding: 1%;
+	margin-top: 5%;
+}
+
+.center {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+footer {
+	width: 90%;
+	height: 50px;
+	background: rgb(199, 18, 21);
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+footer div {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 2%;
+}
+
+.l {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.r {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+@media screen and (max-width: 200px) {
+	.head1, .head2 {
+		display: none;
+	}
+	.main .head {
+		margin: 1%;
+		padding: 1%;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 200px) and (max-width: 280px) {
+	.head1 {
+		font-size: 1.3em;
+		line-height: 30px;
+		min-height: 0;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	body .start {
+		width: 100%;
+	}
+	.main {
+		width: 100%;
+	}
+	.center {
+		font-size: 1.2em;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.center {
+		font-size: 1.3em;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.center {
+		font-size: 1.4em;
+	}
+}
+}

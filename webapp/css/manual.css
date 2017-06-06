@@ -1,0 +1,193 @@
+*.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url('../img/bcg.jpg');
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+
+body .start {
+	height: 100%;
+	overflow: auto;
+	background: rgba(68, 69, 69, 0.95);
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.head1 {
+	font-family: "BeerRegular";
+	font-size: 2.5em;
+	line-height: 45px;
+	min-height: 50px;
+	background: rgb(199, 18, 21);
+	display: block;
+	padding-left: 3%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+a:visited, a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.main .head {
+	margin: 5% 10%;
+	font-family: "RobotoRegular";
+	padding: 3%;
+	background: rgb(105, 3, 3);
+	border-style: solid;
+	border-color: rgb(105, 3, 3);
+	border-radius: 10px;
+	color: white;
+}
+
+.cours {
+	font-size: 1.5em;
+	width: 60%;
+	background: white;
+	margin-top: 25px;
+	margin-left: 4%;
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	color: black;
+	text-align: center;
+}
+
+.cours1 {
+	display: inline-block;
+	font-size: 1.3em;
+	width: 80%; //
+	margin-top: 15px;
+	margin-left: 9%;
+	margin-right: 5%;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background: rgb(199, 18, 21);
+}
+
+footer div {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 2%;
+}
+
+.l {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.r {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+/****************************************************************/
+@media screen and (max-width: 200px) {
+	.head1, .head2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	body .start {
+		width: 100%;
+	}
+	.head1 {
+		font-size: 1.3em;
+		line-height: 30px;
+		min-height: 0;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main .head {
+		margin: 5% 3%;
+		padding: 0.5%;
+	}
+	.cours {
+		font-size: 1.2em;
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	.cours1 {
+		font-size: 1.1em;
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	body .start {
+		width: 94%;
+	}
+	.main .head {
+		margin: 5% 4%;
+		padding: 1%;
+	}
+	.cours {
+		font-size: 1.4em;
+		width: 90%;
+		margin-top: 10px;
+		padding: 1%;
+	}
+	.cours1 {
+		font-size: 1.3em;
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 1000px) {
+	.cours {
+		font-size: 1.4em;
+		width: 90%;
+		margin-top: 10px;
+		padding: 1%;
+	}
+	.cours1 {
+		font-size: 1.3em;
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+	}
+}

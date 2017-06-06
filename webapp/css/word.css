@@ -1,0 +1,474 @@
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.hide {
+	display: none;
+}
+/*как сделать, что бы при ajax запросе страница*/
+.loader {
+	position: absolute;
+	z-index: 10;
+	background-image: url('../img/gif/Processing.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	background-color: #CCCCCC;
+	display: none;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url('../img/bcg.jpg');
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+
+body .start {
+	height: 100%;
+	overflow: auto;
+	background: rgba(68, 69, 69, 0.95);
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.head1 {
+	font-family: "BeerRegular";
+	font-size: 2.5em;
+	line-height: 45px;
+	min-height: 50px;
+	background: rgb(199, 18, 21);
+	display: block;
+	padding-left: 3%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.main {
+	width: 85%;
+	margin: 0 auto;
+	min-height: 350px;
+}
+
+a:visited, a:link {
+	text-decoration: none;
+}
+
+.divWordAdd {
+	width: 100%;
+	padding: 2% 2%;
+	margin-top: 3%;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(105, 3, 3);
+	margin-top: 3%;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+p.word {
+	display: inline;
+	font-size: 1.8em;
+}
+
+.divnewadd {
+	display: inline-block;
+	float: left;
+	width: 70%;
+}
+
+.btnadd {
+	text-align: right;
+	min-width: 200px;
+	width: 30%;
+	float: left;
+	min-width: 200px;
+}
+
+input[type=text] {
+	height: 40px;
+	font-size: 1.1em;
+	width: 48%;
+}
+
+.divWord {
+	border-bottom-style: solid;
+	border-color: rgba(143, 141, 139, 0.15);
+}
+
+.oneWord {
+	width: 100%;
+	float: left;
+}
+
+.wordEditIn {
+	font-size: 1.5em;
+	float: right;
+}
+
+.wordEditIn:active {
+	text-shadow: 3px -2px 10px white;
+}
+
+.wordEditIn:hover {
+	font-size: 1.7em;
+}
+
+.main .frm_unit {
+	padding: 2% 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(105, 3, 3);
+}
+
+input[type=checkbox] {
+	width: 30px;
+	height: 20px;
+}
+
+.size {
+	min-height: 250px;
+}
+
+.center {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.left {
+	font-size: 1.6em;
+	text-align: left;
+}
+
+.btm_big {
+	height: 40px;
+	min-width: 40px;
+}
+
+.spisokunit2 {
+	margin-bottom: 5px;
+}
+
+.btm_big1, .btm_big1Spec {
+	min-width: 100px;
+	height: 40px;
+}
+
+.btm_big2 {
+	margin-top: 30px;
+	height: 50px;
+	width: 50%;
+	font-size: 1.1em;
+}
+
+footer {
+	width: 90%;
+	height: 50px;
+	background: rgb(199, 18, 21);
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+footer div {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 2%;
+}
+
+.l {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.r {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+@media screen and (max-width: 280px) {
+	body .start {
+		width: 100%;
+	}
+	.head1, .head2 {
+		display: none;
+	}
+	.main {
+		width: 100%;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	p.word {
+		font-size: 1.3em;
+	}
+	.divnewadd {
+		width: 100%;
+	}
+	input[type=text] {
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.left {
+		font-size: 1.1em;
+	}
+	.btnadd {
+		text-align: center;
+		width: 100%;
+	}
+	.wordEditIn {
+		font-size: 1.1em;
+		width: 100%;
+		text-align: left;
+	}
+	.wordEditIn:hover {
+		font-size: 1.3em;
+	}
+	input[type=checkbox] {
+		width: 25px;
+		height: 15px;
+	}
+	.btm_big1 {
+		height: 40px;
+		width: 100%;
+	}
+	.size {
+		width: 100%;
+	}
+	.center {
+		font-size: 0.9em;
+	}
+	.btm_big2 {
+		margin-top: 5px;
+		height: 40px;
+		width: 100%;
+		font-size: 1em;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 360px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main {
+		width: 95%;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	p.word {
+		font-size: 1.3em;
+	}
+	.divnewadd {
+		width: 100%;
+	}
+	input[type=text] {
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	input[type=checkbox] {
+		width: 25px;
+		height: 15px;
+	}
+	.left {
+		font-size: 1.2em;
+	}
+	.btnadd {
+		text-align: center;
+		width: 100%;
+	}
+	.wordEditIn {
+		font-size: 1.1em;
+		width: 100%;
+		text-align: left;
+	}
+	.wordEditIn:hover {
+		font-size: 1.3em;
+	}
+	.btm_big1 {
+		height: 40px;
+		width: 100%;
+	}
+	.size {
+		width: 100%;
+	}
+	.center {
+		font-size: 0.9em;
+	}
+	.btm_big2 {
+		margin-top: 5px;
+		height: 40px;
+		width: 100%;
+		font-size: 1em;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main {
+		width: 95%;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	p.word {
+		font-size: 1.4em;
+	}
+	.divnewadd {
+		width: 100%;
+	}
+	input[type=text] {
+		font-size: 1.1em;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.left {
+		font-size: 1.3em;
+	}
+	.btnadd {
+		text-align: center;
+		font-size: 1.1em;
+		width: 100%;
+	}
+	.wordEditIn {
+		font-size: 1.2em;
+		width: 100%;
+		text-align: left;
+	}
+	.wordEditIn:hover {
+		font-size: 1.4em;
+	}
+	.btm_big1 {
+		height: 40px;
+		width: 100%;
+	}
+	.size {
+		width: 100%;
+	}
+	.center {
+		font-size: 1.1em;
+	}
+	.btm_big2 {
+		margin-top: 5px;
+		height: 40px;
+		width: 100%;
+		font-size: 1em;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	body .start {
+		width: 94%;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	p.word {
+		font-size: 1.4em;
+	}
+	.divnewadd {
+		width: 100%;
+	}
+	.main {
+		width: 95%;
+	}
+	input[type=text] {
+		font-size: 1.1em;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.btnadd {
+		text-align: center;
+		font-size: 1.1em;
+		width: 100%;
+	}
+	.wordEditIn {
+		font-size: 1.2em;
+		width: 100%;
+		text-align: left;
+	}
+	.wordEditIn:hover {
+		font-size: 1.4em;
+	}
+	.btm_big1 {
+		height: 40px;
+		width: 100%;
+	}
+	.size {
+		width: 100%;
+	}
+	.center {
+		font-size: 1.1em;
+	}
+	.btm_big2 {
+		margin-top: 5px;
+		height: 40px;
+		width: 100%;
+		font-size: 1em;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 1000px) {
+	.divnewadd {
+		width: 100%;
+	}
+	input[type=text] {
+		font-size: 1.1em;
+		width: 48%;
+		margin-bottom: 5px;
+	}
+	.btnadd {
+		text-align: center;
+		font-size: 1.1em;
+		width: 100%;
+	}
+}

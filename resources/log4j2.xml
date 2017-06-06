@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+	<Properties>
+		<Property name="basePath">logs</Property>
+		</Properties>
+
+	<Appenders>
+		<RollingFile name="fileLogger" fileName="./${basePath}/app-info.log"
+			filePattern="${basePath}/app-info-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %L	%msg%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+					<SizeBasedTriggeringPolicy size="10 MB"/>
+			</Policies>
+			 <DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+		<RollingFile name="fileMailLogger" fileName="./${basePath}/mail-info.log"
+			filePattern="${basePath}/mail-info-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %L	%msg%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+					<SizeBasedTriggeringPolicy size="10 MB"/>
+			</Policies>
+			 <DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %L %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="allExcept" level="debug" additivity="true">
+			<appender-ref ref="fileLogger" level="warn" />
+		</Logger>
+		<Logger name="mail" level="debug" additivity="true">
+			<appender-ref ref="fileMailLogger" level="warn" />
+		</Logger>
+		<Root level="debug" additivity="true">
+			<appender-ref ref="console" />
+		</Root>
+	</Loggers>
+</Configuration>

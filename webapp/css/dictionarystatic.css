@@ -1,0 +1,199 @@
+body {
+	background-attachment: fixed;
+	background-image: url('../img/bcg.jpg');
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+
+body .start {
+	height: 100%;
+	overflow: auto;
+	background: rgba(68, 69, 69, 0.95);
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.head1 {
+	font-family: "BeerRegular";
+	font-size: 2.5em;
+	line-height: 45px;
+	min-height: 50px;
+	background: rgb(199, 18, 21);
+	display: block;
+	padding-left: 3%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.main {
+	width: 85%;
+	margin: 0 auto;
+	min-height: 350px;
+}
+
+.unit {
+	padding: 1%;
+	margin-top: 20px;
+}
+
+.statictest {
+	width: 100%;
+	margin: 3% auto;
+	padding: 1%; //
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(105, 3, 3);
+	overflow: hidden;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+a:visited, a:link {
+	text-decoration: none;
+}
+
+a.staticUnit {
+	font-size: 1.9em;
+	display: inline-block;
+	width: 100%;
+	border-bottom-style: solid;
+	border-color: rgba(143, 141, 139, 0.15);
+	margin-top: 10px;
+}
+
+a.staticUnit:active {
+	text-shadow: 3px -2px 10px white;
+}
+
+a.staticUnit:hover {
+	font-size: 2.1em;
+}
+
+footer {
+	width: 90%;
+	height: 50px;
+	background: rgb(199, 18, 21);
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+footer div {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 2%;
+}
+
+.l {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.r {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+@media screen and (max-width: 280px) {
+	body .start {
+		width: 100%;
+	}
+	.head1, .head2 {
+		display: none;
+	}
+	.main {
+		width: 100%;
+	}
+	a.staticUnit {
+		margin-top: 10px;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	a.staticUnit {
+		font-size: 1.3em;
+	}
+	a.staticUnit:hover {
+		font-size: 1.5em;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main {
+		width: 95%;
+	}
+	a.staticUnit {
+		margin-top: 15px;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	a.staticUnit {
+		font-size: 1.4em;
+	}
+	a.staticUnit:hover {
+		font-size: 1.6em;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+	body .start {
+		width: 90%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main {
+		width: 95%;
+	}
+	a.staticUnit {
+		margin-top: 5px;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	a.staticUnit {
+		font-size: 1.5em;
+	}
+	a.staticUnit:hover {
+		font-size: 1.7em;
+	}
+	footer {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 940px) {
+	p {
+		font-size: 1.4em;
+	}
+}

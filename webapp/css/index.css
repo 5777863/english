@@ -1,0 +1,207 @@
+body {
+	background-attachment: fixed;
+	background-image: url('../img/bcg.jpg');
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+
+body .start {
+	height: 100%;
+	overflow: auto;
+	background: rgba(68, 69, 69, 0.95);
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.head1 {
+	font-family: "BeerRegular";
+	font-size: 2.5em;
+	line-height: 45px;
+	min-height: 50px;
+	background: rgb(199, 18, 21);
+	display: block;
+	padding-left: 3%;
+}
+
+a:visited, a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.main .head {
+	margin: 5% 10%;
+	font-family: "RobotoRegular";
+	padding: 3%;
+	background: rgb(105, 3, 3);
+	border-style: solid;
+	border-color: rgb(105, 3, 3);
+	border-radius: 10px;
+	color: white;
+	font-size: 1.4em;
+}
+
+.div_carousel {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 2%;
+	font-family: BeerRegular;
+	font-size: 1.5em; //
+	color: rgb(199, 18, 21); //
+	background: rgba(235, 228, 213, 0.3);
+}
+
+.divtst {
+	display: inline-block;
+	width: 31.33333%;
+	float: left;
+	height: 150px;
+	margin: 1%;
+	border-top-style: ridge;
+}
+
+.divtst a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-size: 1.6em;
+	color: grey;
+	text-align: center;
+	padding: 10%;
+	font-family: "RobotoRegular";
+}
+
+.divtst a:hover {
+	background: rgba(235, 228, 213, 0.3);
+}
+
+.divtst a:active {
+	background: rgba(235, 228, 213, 0.7);
+	box-shadow: 0 0 10px rgba(249, 255, 61, 1);
+}
+
+.center {
+	text-align: center;
+}
+
+footer {
+	width: 90%;
+	height: 50px;
+	background: rgb(199, 18, 21);
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+footer div {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 2%;
+}
+
+.l {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.r {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+@keyframes anim {
+	from {color: none;}
+to {	color: rgb(245, 149, 39);}
+}
+.anime {
+	animation: anim 0.7s 7;
+}
+
+@media screen and (max-width: 200px) {
+	.head1, .head2 {
+		display: none;
+	}
+	.tests {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	body .start {
+		width: 100%;
+	}
+	.head1 {
+		font-size: 1.3em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main .head {
+		margin: 5% 3%;
+		padding: 1%;
+		font-size: 1.2em;
+	}
+	.divtst {
+		height: auto;
+		width: 99%;
+		margin: 0.5%;
+	}
+	.divtst a {
+		font-size: 1.2em;
+		padding: 3%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body .start {
+		width: 94%;
+	}
+	.head1 {
+		font-size: 1.4em;
+		line-height: 30px;
+		min-height: 0;
+	}
+	.main .head {
+		margin: 5% 4%;
+		padding: 1%;
+		font-size: 1.2em;
+	}
+	.divtst {
+		height: auto;
+		width: 99%;
+		margin: 0.5%;
+	}
+	.divtst a {
+		font-size: 1.2em;
+		padding: 3%;
+	}
+	footer {
+		width: 94%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+	.divtst {
+		width: 49%;
+		margin: 0.5%;
+	}
+	.divtst a {
+		font-size: 1.2em;
+		padding: 5%;
+	}
+}

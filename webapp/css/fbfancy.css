@@ -1,0 +1,65 @@
+textarea.fb_txtarea {
+	resize: none;
+	font-size: 0.9em;
+	font-family: "RobotoRegular";
+}
+
+.fb_center {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+p.fb_center {
+	color: white; //
+	transition: color 1s;
+}
+
+.fb_hide {
+	display: none;
+}
+
+.fb_size { //
+	width: 600px;
+	height: 250px;
+}
+
+.fb_btm_big {
+	margin-top: 15px;
+	height: 50px;
+	width: 50%;
+	font-size: 1.1em;
+}
+
+@media screen and (max-width: 240px) {
+	.fb_btm_big {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	textarea.fb_txtarea {
+		width: 100%;
+	}
+	.fb_center {
+		font-size: 1em;
+	}
+	.fb_btm_big {
+		width: 70%;
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+	textarea.fb_txtarea {
+		width: 260px;
+	}
+	.fb_btm_big {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+	textarea.fb_txtarea {
+		width: 360px;
+	}
+}
